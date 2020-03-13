@@ -38,19 +38,38 @@ namespace dice
                 {
                     Console.WriteLine("invalid entry");
                 }
-                if (chosenDice == 0)
+                else if (result)
                 {
-                    Console.WriteLine("Bye!");
-                    Environment.Exit(0);
+                    if (chosenDice == 0)
+                    {
+                        Console.WriteLine("Bye!");
+                        whichDiceSelected = chosenDice;
+                        diceIsSelected = true;
+                        Environment.Exit(0);
+                    }
+                    else if (chosenDice < 2)
+                    {
+                        Console.WriteLine("is that even possible??? a " + chosenDice + " sided object?");
+                    }
+                    else if (chosenDice > 1)
+                    {
+                        whichDiceSelected = chosenDice;
+                        diceIsSelected = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error: Enumeration Failed!");
+                        whichDiceSelected = chosenDice;
+                        diceIsSelected = true;
+                        Environment.Exit(0);
+                    }
                 }
-                if (chosenDice < 2)
+                else
                 {
-                    Console.WriteLine("is that even possible??? a " + chosenDice + " sided object?");
-                }
-                if (chosenDice > 1)
-                {
+                    Console.WriteLine("Error: Uncollapsed Quantum State!");
                     whichDiceSelected = chosenDice;
                     diceIsSelected = true;
+                    Environment.Exit(0);
                 }
             }
             while (diceIsSelected)
@@ -65,6 +84,8 @@ namespace dice
                 {
                     keyEntry = Console.ReadKey();
                     int resultNumber = 0;
+                    Console.WriteLine("");
+                    Console.WriteLine("");
                     if (whichDiceSelected == 2)
                     {
                         resultNumber = diceResult(whichDiceSelected);
@@ -72,14 +93,17 @@ namespace dice
                         if (resultNumber == 1)
                         {
                             Console.WriteLine("Heads");
+                            Console.WriteLine("");
                         }
                         else if (resultNumber == 2)
                         {
                             Console.WriteLine("Tails");
+                            Console.WriteLine("");
                         }
                         else
                         {
                             Console.WriteLine("Error: " + resultNumber);
+                            Console.WriteLine("");
                         }
                     }
                     else
@@ -87,6 +111,7 @@ namespace dice
                         resultNumber = diceResult(whichDiceSelected);
                         Console.WriteLine("1D" + whichDiceSelected + " rolled:");
                         Console.WriteLine(resultNumber);
+                        Console.WriteLine("");
                     }
                 }
                 while (keyEntry.Key != ConsoleKey.Escape);
@@ -102,3 +127,4 @@ namespace dice
         }
     }
 }
+
