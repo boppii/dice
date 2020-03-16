@@ -167,7 +167,7 @@ namespace dice
                 int sideDeterminant = _random.Next(2147483646);
                 if (sideDeterminant == 284941827)
                 {
-                    //set output to something that will trigger the "else" condition
+                    //set output to something that will trigger the "else" condition on line 134
                     output = 3;
                 }
                 else
