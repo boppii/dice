@@ -160,32 +160,40 @@ namespace dice
         {
             //create output variable
             int output = 0;
-            //if the coin is selected
+            //if the coin is selected...
             if (input == 2)
             {
                 //create the chance of landing on the side
                 int sideDeterminant = _random.Next(2147483646);
                 if (sideDeterminant == 284941827)
                 {
+                    //set output to something that will trigger the "else" condition
                     output = 3;
                 }
                 else
                 {
-                    //set output as random number with die as input
-                    output = _random.Next(input);
-                    //add one to output to avoid an output of zero
-                    output = output + 1;
+                    //call randomizer method and set output variable to output of the method called
+                    output = randR(input);
                 }
             }
+            //if any other die is selected...
             else
             {
-                //set output as random number with die as input
-                output = _random.Next(input);
-                //add one to output to avoid an output of zero
-                output = output + 1;
+                //call randomizer method and set output variable to output of the method called
+                output = randR(input);
             }
             //return output to where the method is called
             return output;
+        }
+        //randomizer method takes in an integer
+        public static int randR(int randInp)
+        {
+            //set output as random number with die as input
+            int randOut = _random.Next(randInp);
+            //add one to output to avoid an output of zero
+            randOut = randOut + 1;
+            //send out the output
+            return randOut;
         }
     }
 }
