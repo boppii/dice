@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Threading;
 using System.Reflection;
-//
+// none of those are ever used except for System.IO and System, why are we keeping them???? --erika
 namespace dice
 {
     //make this public so it can be called from outside
