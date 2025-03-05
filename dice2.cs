@@ -237,27 +237,23 @@ namespace dice
 						if (resultNumber == 1)
 						{
 							Console.WriteLine("║                            Heads                            ║");
-							Console.WriteLine("║  Press Escape (Esc) key to exit. Press Any Key To Continue  ║");
-							Console.WriteLine("╚═════════════════════════════════════════════════════════════╝");
 						}
 						
 						//show tails result
 						else if (resultNumber == 2)
 						{
 							Console.WriteLine("║                            Tails                            ║");
-							Console.WriteLine("║  Press Escape (Esc) key to exit. Press Any Key To Continue  ║");
-							Console.WriteLine("╚═════════════════════════════════════════════════════════════╝");
 						}
 						
 						//show side result
 						else
 						{
 							//congratulate the user
-							Console.WriteLine("");
 							Console.WriteLine("║ Wow! It landed on the side, somehow! That's extremely rare! ║");
-							Console.WriteLine("║  Press Escape (Esc) key to exit. Press Any Key To Continue  ║");
-							Console.WriteLine("╚═════════════════════════════════════════════════════════════╝");
 						}
+						
+						Console.WriteLine("║  Press Escape (Esc) key to exit. Press Any Key To Continue  ║");
+						Console.WriteLine("╚═════════════════════════════════════════════════════════════╝");
 						Console.WriteLine("");
 					}
 					
