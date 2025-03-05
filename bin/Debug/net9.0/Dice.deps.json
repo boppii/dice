@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Dice/1.0.0": {
+        "dependencies": {
+          "Microsoft.NET.ILLink.Tasks": "9.0.2",
+          "Redzen": "16.0.0"
+        },
+        "runtime": {
+          "Dice.dll": {}
+        }
+      },
+      "Microsoft.NET.ILLink.Tasks/9.0.2": {},
+      "Redzen/16.0.0": {
+        "runtime": {
+          "lib/net8.0/Redzen.dll": {
+            "assemblyVersion": "16.0.0.0",
+            "fileVersion": "16.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dice/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NET.ILLink.Tasks/9.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+KFnCLVPicEq99ko0tq+ycTvNLXHw0tImmTZjPloB/DOFLPT56KLfk5aS7wbgXRPzYhXTTBYLGaABea5mke77w==",
+      "path": "microsoft.net.illink.tasks/9.0.2",
+      "hashPath": "microsoft.net.illink.tasks.9.0.2.nupkg.sha512"
+    },
+    "Redzen/16.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fhj8WlwNiAmCTik1XLPSSX4L4J9sid4IWP1mQniidtg5BGzMiJ9go4vo7wMWENf5pglqzMu0o/W6zSYBcK4cIA==",
+      "path": "redzen/16.0.0",
+      "hashPath": "redzen.16.0.0.nupkg.sha512"
+    }
+  }
+}

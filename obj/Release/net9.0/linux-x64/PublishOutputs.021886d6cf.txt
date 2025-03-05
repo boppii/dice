@@ -1,0 +1,2 @@
+F:\C# coding2\dice\bin\Release\net9.0\linux-x64\publish\Dice.pdb
+F:\C# coding2\dice\bin\Release\net9.0\linux-x64\publish\Dice

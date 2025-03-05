@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "dotnet",
+			"task": "build F:\\C# coding2\\dice\\Dice.csproj",
+			"file": "F:\\C# coding2\\dice\\Dice.csproj",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "dotnet: build F:\\C# coding2\\dice\\Dice.csproj"
+		}
+	]
+}

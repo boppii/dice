@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "o7buzy4V074=",
+  "success": true,
+  "projectFilePath": "F:\\C# coding2\\dice\\Dice.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bopbd\\.nuget\\packages\\microsoft.net.illink.tasks\\9.0.2\\microsoft.net.illink.tasks.9.0.2.nupkg.sha512",
+    "C:\\Users\\bopbd\\.nuget\\packages\\redzen\\16.0.0\\redzen.16.0.0.nupkg.sha512",
+    "C:\\Users\\bopbd\\.nuget\\packages\\microsoft.netcore.app.runtime.linux-x64\\9.0.2\\microsoft.netcore.app.runtime.linux-x64.9.0.2.nupkg.sha512",
+    "C:\\Users\\bopbd\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-x64\\9.0.2\\microsoft.aspnetcore.app.runtime.linux-x64.9.0.2.nupkg.sha512",
+    "C:\\Users\\bopbd\\.nuget\\packages\\microsoft.netcore.app.host.linux-x64\\9.0.2\\microsoft.netcore.app.host.linux-x64.9.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
